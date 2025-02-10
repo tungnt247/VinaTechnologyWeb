@@ -1,0 +1,117 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body,
+html {
+  font-family: "Nexa";
+  line-height: 1.6;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee1b24;
+  display: inline;
+  padding: 0.5rem;
+}
+
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-img img {
+  margin-top: 4rem;
+}
+
+/* ====================== OPTICAL CUTTING ====================== */
+.container-optical-cutting {
+  flex: 1;
+  padding: 5rem 15.75rem;
+}
+
+.title-optical-cutting {
+  font-size: 3rem;
+  color: #2b323b;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.content-optical-cutting {
+  font-size: 1rem;
+  color: #2b323b;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.production-tag {
+  margin-top: 20px;
+}
+
+.title-production-tag {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #2b323b0a;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #2b323b0a;
+}
+
+.product-item {
+  background-color: #4a5568; /* Gray-700 */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* ====================== CUTTING APPLICATION ====================== */
+.container-cutting-application {
+  flex: 1;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 7.5rem 15.75rem;
+}
+
+/* ====================== PRODUCT PHOTOS ====================== */
+.container-product-photos {
+  flex: 1;
+  text-align: center;
+  padding: 7.5rem 15.75rem;
+}
+
+/* ====================== WRAPPER ====================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}

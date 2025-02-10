@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body,
+html {
+  font-family: "Nexa";
+  line-height: 1.6;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ====================== CONTACT-US ====================== */
+.contact-us {
+  text-align: center;
+}
+
+.contact-us h1 {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  color: #2b323b;
+  font-size: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-card {
+  background-color: #ee1b240a;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  width: 600px;
+  text-align: left;
+  border: 1px solid #ee1b2433;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #2b323b;
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+  color: #ee1b24;
+}
+
+.introduce-boss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduce-boss p {
+  font-size: 1.125rem;
+  color: #2b323b80;
+}
+
+.container p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.container p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* ====================== WRAPPER ====================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
