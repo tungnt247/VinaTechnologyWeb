@@ -108,11 +108,13 @@ main {
 
 /* ====================== Organization Section ====================== */
 .organization-section {
-  background: url("/resources/images/bg_elipse.svg") no-repeat;
+  background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+  background-size: cover;
   padding: 140px 0px 120px 0px;
-}
-
-.container-organization-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .organization-section h1 {

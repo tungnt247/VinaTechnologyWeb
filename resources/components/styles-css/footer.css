@@ -33,6 +33,22 @@
   align-items: flex-start;
 }
 
+.footer-link {
+  display: flex;
+  margin: 0.5rem 0;
+  font-size: 16px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-link:hover {
+  opacity: 0.85;
+}
+
+.footer-link:active {
+  opacity: 0.7;
+}
+
 .footer-column a {
   color: white;
   text-decoration: none;
