@@ -40,9 +40,14 @@ html {
   margin-top: 4rem;
 }
 
+.custom-header-optical-cutting {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* ====================== OPTICAL CUTTING ====================== */
 .container-optical-cutting {
   flex: 1;
+  /* padding: 5rem 21.313rem; */
   padding: 5rem 15.75rem;
 }
 
