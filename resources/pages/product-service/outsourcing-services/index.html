@@ -11,30 +11,34 @@
   <link rel="stylesheet" type="text/css" href="/vendors/css/fonts.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/header-homepage.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/footer.css">
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header id="header-homepage"></header>
+    <header id="header-homepage" class="custom-header-outsourcing-services"></header>
 
     <main>
       <!-- Outsourcing Services -->
       <section class="section-outsourcing-services">
-        <h1 class="title-outsourcing-services">Outsourcing services</h1>
+        <h1 class="title-outsourcing-services" data-i18n="outsourcing_services">Outsourcing services</h1>
         <div class="container-content">
-          <p class="content-outsourcing-services">Our company offers comprehensive outsourcing services tailored to meet
+          <p class="content-outsourcing-services" data-i18n="outsourcing_services1">Our company offers comprehensive
+            outsourcing services tailored to meet
             the
             precision needs of industries requiring
             die-cutting and material processing. With a focus on quality, efficiency, and customization, we provide
             end-to-end
             solutions that include material sourcing, precision die-cutting, and product assembly.</p>
-          <p class="content-outsourcing-services">Our outsourcing capabilities span a wide range of materials such as
+          <p class="content-outsourcing-services" data-i18n="outsourcing_services2">Our outsourcing capabilities span a
+            wide range of materials such as
             optical
             adhesives, EMI shielding components,
             heat-conductive materials, and double-sided adhesive tapes. We serve industries like electronics,
             automotive, and
             consumer goods, delivering high-quality components that meet stringent specifications.</p>
-          <p class="content-outsourcing-services">By leveraging advanced technologies, skilled manpower, and streamlined
+          <p class="content-outsourcing-services" data-i18n="outsourcing_services3">By leveraging advanced technologies,
+            skilled manpower, and streamlined
             processes, we enable our clients to reduce costs,
             enhance productivity, and focus on their core competencies. Partner with us to ensure seamless, reliable,
             and scalable
@@ -44,12 +48,31 @@
           <!-- Seek Die-cutting performance -->
           <div class="card">
             <div>
-              <h2>Seek Die-cutting performance:</h2>
+              <h2 data-i18n="seek_die">Seek Die-cutting performance:</h2>
               <ul>
-                <li><i class="fas fa-check"></i>High speed running</li>
-                <li><i class="fas fa-check"></i>Rapid response 24hours</li>
-                <li><i class="fas fa-check"></i>Complex products with high accuracy</li>
-                <li><i class="fas fa-check"></i>High quality and can meets the accuracy of automation process</li>
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="seek_die1">High speed running</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="seek_die2">Rapid response 24hours</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="seek_die3">Complex products with high accuracy</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="seek_die4">High quality and can meets the accuracy of automation process</li>
+                </div>
               </ul>
             </div>
             <img src="/resources/images/img_seek_die_cutting.svg" alt="seek_die_cutting">
@@ -59,10 +82,29 @@
             <div>
               <h2>Rotary Die-cutting performance:</h2>
               <ul>
-                <li><i class="fas fa-check"></i>High capacity</li>
-                <li><i class="fas fa-check"></i>Building the complex products</li>
-                <li><i class="fas fa-check"></i>Good quality</li>
-                <li><i class="fas fa-check"></i>For joint products with the large size and multi layers</li>
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="rotary_die1">High speed running</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="rotary_die2">Building the complex products</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="rotary_die3">Good quality</li>
+                </div>
+
+                <div style="display: flex; flex-direction: row;">
+                  <img src="/resources/images/ic_check.svg" alt="ic_check"
+                    style="width: 1.25rem; height: 1.25rem; margin-right: 4px;">
+                  <li data-i18n="rotary_die4">For joint products with the large size and multi layers</li>
+                </div>
               </ul>
             </div>
             <img src="/resources/images/img_rotary_die_cutting.svg" alt="rotary_die_cutting">
@@ -72,7 +114,7 @@
 
       <!-- Process Flow -->
       <section class="section-process-flow">
-        <h2 class="title-section">Process flow</h2>
+        <h2 class="title-section" data-i18n="process_flow">Process flow</h2>
         <div class="container-img">
           <img src="/resources/images/img_process_flow.svg" alt="img_process_flow">
         </div>
@@ -80,7 +122,7 @@
 
       <!-- Equipment Exhibition -->
       <section class="section-equipment-exhibition">
-        <h2 class="title-section">Equipment Exhibition</h2>
+        <h2 class="title-section" data-i18n="equipment_exhibition">Equipment Exhibition</h2>
         <div class="container-img">
           <img src="/resources/images/img_equipment_exhibition.svg" alt="img_equipment_exhibition">
         </div>
@@ -88,23 +130,27 @@
 
       <!-- Equipment Capacity -->
       <section class="section-equipment-capacity">
-        <h2 class="title-section-equipment-capacity">Equipment Capacity</h2>
-        <div class="container-img img-equipment-capacity">
-          <img src="/resources/images/img_equipment_capacity.svg" alt="img_equipment_capacity">
+        <div class="equipment-capacity">
+          <h2 class="title-section-equipment-capacity" data-i18n="equipment_capacity">Equipment Capacity</h2>
+          <div class="container-img img-equipment-capacity">
+            <img src="/resources/images/img_equipment_capacity.svg" alt="img_equipment_capacity">
+          </div>
         </div>
       </section>
 
       <!-- Customer Satisfaction Section -->
       <section id="customer-satisfaction" class="satisfaction-section">
-        <p class="content">Quality first - Customer first</p>
-        <p class="content sub-content">Continuous improvement and<br /> sustainable operation</p>
-        <p class="tag-content">99% Customer Satisfaction</p>
+        <p class="content" data-i18n="quality_customer_first">Quality first - Customer first</p>
+        <p class="content sub-content" data-i18n="satisfaction_quote">Continuous improvement and<br /> sustainable
+          operation</p>
+        <p class="tag-content" data-i18n="customer_rating">99% Customer Satisfaction</p>
       </section>
 
       <!-- Quality Control -->
       <section class="section-quality-control">
-        <h2 class="title-section">Quality Control</h2>
-        <p class="content-quality-control">We have been following the ISO quality system for quality management. And we
+        <h2 class="title-section" data-i18n="quality_control">Quality Control</h2>
+        <p class="content-quality-control" data-i18n="quality_control_content">We have been following the ISO quality
+          system for quality management. And we
           implement supplier election,
           incoming material inspection , in-process inspection and shipping inspection according to the quality
           standards.</p>
@@ -119,9 +165,9 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
-  <script src="/resources/js/load-footer.js"></script>
   <script src="/resources/js/load-header-homepage.js"></script>
+  <script src="/resources/js/load-footer.js"></script>
+  <script src="/resources/js/scripts.js"></script>
 </body>
 
 

@@ -11,23 +11,26 @@
   <link rel="stylesheet" type="text/css" href="/vendors/css/fonts.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/header-homepage.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/footer.css">
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header id="header-homepage"></header>
+    <header id="header-homepage" class="custom-header-optical-cutting"></header>
 
     <main>
       <section class="container-optical-cutting">
-        <h1 class="title-optical-cutting">Optical material die cutting</h1>
+        <h1 class="title-optical-cutting" data-i18n="optical_material_cutting">Optical material die cutting</h1>
         <div class="container-content">
-          <p class="content-optical-cutting">Our optical material die cutting services are designed to meet the precise
+          <p class="content-optical-cutting" data-i18n="optical_material_cutting1">Our optical material die cutting
+            services are designed to meet the precise
             requirements of modern electronic
             devices. We
             specialize in crafting high-performance components for applications such as temporary protection, sapphire
             lapping,
             optical clear adhesive (OCA) processing, light management, EMI shielding, and battery bonding.</p>
-          <p class="content-optical-cutting">Utilizing advanced materials like protection films, thin flowable OCA,
+          <p class="content-optical-cutting" data-i18n="optical_material_cutting2">Utilizing advanced materials like
+            protection films, thin flowable OCA,
             conductive tapes, EMI absorbers, and
             copper
             foils, we enhance product functionality in areas like grounding, heat spreading, NFC optimization, and low
@@ -41,20 +44,20 @@
           <img src="/resources/images/img_optical_cutting.svg" alt="img_optical_cutting">
         </div>
         <div class="production-tag">
-          <h2 class="title-production-tag">Products</h2>
+          <h2 class="title-production-tag" data-i18n="products">Products</h2>
           <div id="product-list" class="product-list"></div>
         </div>
       </section>
 
       <section class="container-cutting-application">
-        <h2 class="title-section">Die cutting application</h2>
+        <h2 class="title-section" data-i18n="die_cutting_application">Die cutting application</h2>
         <div class="container-img">
           <img src="/resources/images/img_die_cutting_application.svg" alt="img_optical_cutting">
         </div>
       </section>
 
       <section class="container-product-photos">
-        <h2 class="title-section">Product photos</h2>
+        <h2 class="title-section" data-i18n="product_photos">Product photos</h2>
         <div class="container-img">
           <img src="/resources/images/bg_product.svg" alt="img_product_photo">
         </div>
@@ -66,9 +69,10 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
-  <script src="/resources/js/load-footer.js"></script>
   <script src="/resources/js/load-header-homepage.js"></script>
+  <script src="/resources/js/load-footer.js"></script>
+  <script src="script.js"></script>
+  <script src="/resources/js/scripts.js"></script>
 </body>
 
 

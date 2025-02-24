@@ -11,21 +11,22 @@
   <link rel="stylesheet" type="text/css" href="/vendors/css/fonts.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/header-homepage.css">
   <link rel="stylesheet" type="text/css" href="/resources/components/styles-css/footer.css">
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header id="header-homepage"></header>
+    <header id="header-homepage" class="custom-header-contact"></header>
 
     <main>
       <section class="contact-us">
         <div class="container">
-          <h1>CONTACT US</h1>
+          <h1 data-i18n="contact_us">CONTACT US</h1>
           <div class="contact-info">
             <div class="contact-card">
               <div class="introduce-boss">
                 <h2>Le Doan Long</h2>
-                <p>Chairman of the board</p>
+                <p data-i18n="Chairman">Chairman of the board</p>
               </div>
               <p>
                 <img src="/resources/images/ic_email_red.svg" alt="ic_location">
@@ -35,16 +36,16 @@
                 <img src="/resources/images/ic_phone_red.svg" alt="ic_location">
                 (+84) 965 936 688
               </p>
-              <p>
+              <div style="display: flex; flex-direction: row; gap: 8px;">
                 <img src="/resources/images/ic_location_red.svg" alt="ic_location">
-                No. 1 N10 Military Compound, Ngoc Khanh Street, Giang Vo<Br /> Ward, Ba Dinh
-                District., Hanoi
-              </p>
+                <p data-i18n="add_chairman">No. 1 N10 Military Compound, Ngoc Khanh Street, Giang Vo<Br /> Ward, Ba Dinh
+                  District., Hanoi</p>
+              </div>
             </div>
             <div class="contact-card">
               <div class="introduce-boss">
                 <h2>Hoang Thanh Tung</h2>
-                <p>Chief Executive Officer</p>
+                <p data-i18n="chief">Chief Executive Officer</p>
               </div>
               <p>
                 <img src="/resources/images/ic_email_red.svg" alt="ic_location">
@@ -54,11 +55,11 @@
                 <img src="/resources/images/ic_phone_red.svg" alt="ic_location">
                 (+84) 961 498 989
               </p>
-              <p>
+              <div style="display: flex; flex-direction: row; gap: 8px;">
                 <img src="/resources/images/ic_location_red.svg" alt="ic_location">
-                No. 1 N10 Military Compound, Ngoc Khanh Street, Giang Vo<Br /> Ward, Ba Dinh
-                District., Hanoi
-              </p>
+                <p data-i18n="add_chief">No. 1 N10 Military Compound, Ngoc Khanh Street, Giang Vo<Br /> Ward, Ba Dinh
+                  District., Hanoi</p>
+              </div>
             </div>
           </div>
         </div>
@@ -70,8 +71,9 @@
     </footer>
   </div>
 
-  <script src="/resources/js/load-footer.js"></script>
   <script src="/resources/js/load-header-homepage.js"></script>
+  <script src="/resources/js/load-footer.js"></script>
+  <script src="/resources/js/scripts.js"></script>
 </body>
 
 

@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/fonts.css">
   <link rel="stylesheet" type="text/css" href="resources/components/styles-css/header-homepage.css">
   <link rel="stylesheet" type="text/css" href="resources/components/styles-css/footer.css">
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
 </head>
 
 <body>
@@ -19,26 +20,28 @@
   <section id="about" class="about-section">
     <div class="about-container">
       <div class="empty-left">
-        <h2 id="style-title-vina">VINA TECHNOLOGY</h2>
+        <h2 id="style-title-vina" data-i18n="vina_technology">VINA TECHNOLOGY</h2>
       </div>
       <div class="about-image">
         <img src="/resources/images/image1.svg" alt="Vina Technology Office">
       </div>
       <div class="about-content">
-        <p>Founded in 2018, Vina Technology specializes in precision die-cutting <br> solutions. With a 8000m² factory,
+        <p data-i18n="overview_introduction">Founded in 2018, Vina Technology specializes in precision die-cutting <br>
+          solutions. With a 8000m² factory,
           over 90 employees, a skilled management <br> team, and cutting-edge equipment, we excel in R&D, manufacturing,
           sales,<br> and service.
         </p>
         <ul class="core-products">
-          <p class="style-core-products">Core Products:</p>
-          <li>Heat conduction, insulation, and shielding die-cutting</li>
-          <li>Graphite, copper foil, and foam components</li>
-          <li>Optical protective films, AB glue, and OCA optical glue</li>
-          <li>Double-sided adhesive tapes, protective films, soundproofing,<br> waterproofing, and shielding materials
+          <p class="style-core-products" data-i18n="core_products_title">Core Products:</p>
+          <li data-i18n="core_products1">Heat conduction, insulation, and shielding die-cutting</li>
+          <li data-i18n="core_products2">Graphite, copper foil, and foam components</li>
+          <li data-i18n="core_products3">Optical protective films, AB glue, and OCA optical glue</li>
+          <li data-i18n="core_products4">Double-sided adhesive tapes, protective films, soundproofing,<br>
+            waterproofing, and shielding materials
           </li>
         </ul>
-        <p>Vina Technology delivers precision and innovation for diverse industry needs.</p>
-        <a href="#" class="learn-more">LEARN MORE &rarr;</a>
+        <p data-i18n="quote">Vina Technology delivers precision and innovation for diverse industry needs.</p>
+        <a href="/resources/pages/about/index.html" class="learn-more" data-i18n="learn_more">LEARN MORE &rarr;</a>
       </div>
     </div>
   </section>
@@ -51,7 +54,7 @@
 
   <!-- Product Photos Section -->
   <section id="product-photos" class="product-section">
-    <h2>PRODUCT PHOTOS</h2>
+    <h2 data-i18n="product_photos">PRODUCT PHOTOS</h2>
     <div class="product-gallery">
       <img src="resources/images/bg_product.svg" alt="bg_product">
     </div>
@@ -62,29 +65,30 @@
     <div class="values-container">
       <div class="value-item">
         <img src="resources/images/ic_vision.svg" alt="ic_vision">
-        <h3>VISION</h3>
-        <p>Make technology change life</p>
+        <h3 data-i18n="vision">VISION</h3>
+        <p data-i18n="vision_content">Make technology change life</p>
       </div>
       <div class="line"></div>
       <div class="value-item">
         <img src="resources/images/ic_mission.svg" alt="ic_mission">
-        <h3>MISSION</h3>
-        <p>Reliable partner in the field of<br /> precision diecutting</p>
+        <h3 data-i18n="mission">MISSION</h3>
+        <p data-i18n="mission_content">Reliable partner in the field of<br /> precision diecutting</p>
       </div>
       <div class="line"></div>
       <div class="value-item">
         <img src="resources/images/ic_value.svg" alt="ic_value">
-        <h3>VALUE</h3>
-        <p>Honesty and quality, innovation<br /> and gratitude</p>
+        <h3 data-i18n="value">VALUE</h3>
+        <p data-i18n="value_content">Honesty and quality, innovation<br /> and gratitude</p>
       </div>
     </div>
   </section>
 
   <!-- Customer Satisfaction Section -->
   <section id="customer-satisfaction" class="satisfaction-section">
-    <p class="content">Quality first - Customer first</p>
-    <p class="content sub-content">Continuous improvement and<br /> sustainable operation</p>
-    <p class="tag-content">99% Customer Satisfaction</p>
+    <p class="content" data-i18n="quality_customer_first">Quality first - Customer first</p>
+    <p class="content sub-content" data-i18n="satisfaction_quote">Continuous improvement and<br /> sustainable operation
+    </p>
+    <p class="tag-content" data-i18n="customer_rating">99% Customer Satisfaction</p>
   </section>
 
   <!-- Partners Section -->
@@ -133,9 +137,9 @@
   <!-- Footer Section -->
   <div id="footer"></div>
 
-  <script src="/resources/js/scripts.js"></script>
-  <script src="/resources/js/load-footer.js"></script>
   <script src="/resources/js/load-header-homepage.js"></script>
+  <script src="/resources/js/load-footer.js"></script>
+  <script src="/resources/js/scripts.js"></script>
 </body>
 
 </html>
