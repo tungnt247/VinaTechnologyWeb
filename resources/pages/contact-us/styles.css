@@ -103,3 +103,49 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+/* ====================== Responsive Styles ====================== */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .introduce-boss p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us h1 {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .introduce-boss p {
+    font-size: 0.9rem;
+  }
+}
