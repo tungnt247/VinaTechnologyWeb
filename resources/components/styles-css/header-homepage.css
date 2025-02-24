@@ -126,3 +126,127 @@
 .language-item:last-child {
   margin-bottom: 0;
 }
+
+/* ====================== Responsive Styles ====================== */
+/* Drawer Menu Styles */
+.drawer {
+  display: none; /* Ẩn drawer mặc định */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  transform: translateX(100%); /* Đưa drawer ra ngoài màn hình */
+}
+
+.drawer-toggle i {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.drawer-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+
+.drawer.open + .overlay {
+  display: block;
+}
+
+.drawer .menu-item {
+  font-size: 16px;
+}
+
+.drawer.open {
+  display: block;
+  transform: translateX(0); /* Đưa drawer vào màn hình */
+}
+
+.close-drawer {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.drawer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.drawer ul li {
+  margin-bottom: 1rem;
+}
+
+.drawer ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header .container-header {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  .drawer-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .drawer {
+    display: none;
+  }
+
+  .drawer-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container-header {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .drawer-toggle {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 15.625rem;
+    height: auto;
+  }
+}
