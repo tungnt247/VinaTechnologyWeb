@@ -100,3 +100,23 @@ function changeLanguageI18n(lang) {
     selectedItem.classList.add("selected");
   }
 }
+
+function toggleDropdown(event) {
+  event.preventDefault();
+  const dropdown = event.target.closest("li").querySelector(".dropdown");
+  dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block";
+}
+
+function toggleDrawer() {
+  const drawer = document.querySelector(".drawer");
+  const overlay = document.querySelector(".overlay");
+
+  if (drawer.classList.contains("open")) {
+    drawer.classList.remove("open");
+    overlay.style.display = "none";
+  } else {
+    drawer.classList.add("open");
+    overlay.style.display = "block";
+  }
+}
