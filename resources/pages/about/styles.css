@@ -39,6 +39,11 @@ html {
   clip-path: ellipse(100% 160% at 50% -60%);
 }
 
+.des_about_us {
+  font-size: 1.25rem !important;
+  color: #2b323bcc;
+}
+
 .container-about-section {
   max-width: 800px;
   margin: 0 auto;
@@ -103,7 +108,7 @@ main {
 }
 
 .style-elementP {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 /* ====================== Organization Section ====================== */
@@ -220,27 +225,6 @@ main {
   color: #2b323bb2;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .grid .card {
-    width: 100%;
-    max-width: 24.5rem; /* Match upper card width for smaller screens */
-    margin-bottom: 1.5rem;
-  }
-
-  .grid:last-child .card {
-    margin-bottom: 0;
-  }
-}
-
 /* ====================== Vision, Mission, Values Section ====================== */
 .values-section {
   padding: 6.25rem 21.75rem;
@@ -282,4 +266,203 @@ main {
   margin-top: 1rem;
   font-size: 1.25rem;
   color: #2b323b;
+}
+
+/* ====================== Responsive Styles ====================== */
+@media (max-width: 1200px) {
+  /* INFO SECTION */
+  .info-section {
+    padding: 5rem 2rem;
+  }
+
+  /* Seven Cores */
+  .container-body {
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 6.25rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .grid .card {
+    width: 100%;
+    max-width: 24.5rem;
+  }
+
+  .grid:last-child .card {
+    margin-bottom: 0;
+  }
+
+  .grid.lower .card {
+    width: 24.5rem;
+  }
+
+  /* INFO SECTION */
+  .info-section {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 2rem;
+  }
+
+  /* VISION MISSION, VALUES SECTION */
+  .values-section {
+    padding: 3.125rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .value-item h3 {
+    font-size: 1.5rem !important;
+    color: #2b323bb2;
+  }
+
+  .value-item p {
+    margin-top: 1rem;
+    font-size: 1.25rem !important;
+    color: #2b323b;
+  }
+
+  .about-section {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 74px 0px 142px 0px;
+    position: relative;
+    clip-path: ellipse(100% 160% at 50% -60%);
+  }
+
+  .container-organization-section img {
+    max-width: 130%;
+    height: auto;
+  }
+
+  .organization-section {
+    background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+    background-size: cover;
+    padding: 0px;
+    min-height: 60vh;
+  }
+
+  .organization-section h1 {
+    font-size: 2.5rem;
+    color: #2b323b;
+    margin-bottom: 3rem;
+  }
+
+  .container-organization-section {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* INFO SECTION */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .info-box {
+    width: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-box p {
+    color: #2b323b;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 2rem 0rem !important;
+  }
+
+  .values-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-item {
+    margin-bottom: 1.5rem !important;
+    width: calc(100% - 4rem) !important;
+    margin: 0 2rem 1.5rem 2rem !important;
+  }
+
+  .value-item h3 {
+    font-size: 1.75rem !important;
+  }
+
+  .value-item p {
+    font-size: 1rem;
+    margin-top: 0rem !important;
+  }
+
+  .values-section img {
+    margin-bottom: 0rem !important;
+  }
+
+  .container-organization-section img {
+    max-width: 160%;
+    height: auto;
+  }
+
+  .organization-section {
+    background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+    background-size: cover;
+    padding: 0px;
+    min-height: 40vh;
+  }
+
+  .organization-section h1 {
+    font-size: 2rem;
+    color: #2b323b;
+    margin-bottom: 1rem;
+  }
+
+  .container-organization-section {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
