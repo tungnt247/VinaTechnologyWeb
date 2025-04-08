@@ -345,6 +345,12 @@ html {
     background-color: #f9f9f9;
     text-align: center;
   }
+
+  .logo_row img {
+    max-height: 5.375rem;
+    width: auto;
+    margin: 0 1rem;
+  }
 }
 
 @media (max-width: 768px) {
