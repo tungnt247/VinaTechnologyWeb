@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       updateHeaderContent();
       updateFlagImage();
       updateLanguageDropdown();
+      updateFieldOfOperationImage();
     })
     .catch((error) => console.error("Error loading header home page:", error));
 });
@@ -18,6 +19,18 @@ function updateHeaderContent() {
     const key = el.getAttribute("data-i18n");
     el.innerHTML = i18next.t(key);
   });
+}
+
+function updateFieldOfOperationImage() {
+  const savedLanguage = localStorage.getItem("language") || "en";
+  const operationImg = document.querySelector("#field-of-operation img");
+
+  if (operationImg) {
+    operationImg.src =
+      savedLanguage === "vn"
+        ? "resources/images/field_of_operation_vn.svg"
+        : "resources/images/field_of_operation.svg";
+  }
 }
 
 function updateFlagImage() {
