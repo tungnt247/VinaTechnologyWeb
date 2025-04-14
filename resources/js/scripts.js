@@ -81,6 +81,16 @@ function changeLanguageI18n(lang) {
       : "/resources/images/ic_en.svg";
   localStorage.setItem("flagImage", flagImage.src);
 
+  const operationImage = document.getElementById("operation-image");
+  if (operationImage) {
+    operationImage.src =
+      lang === "vn"
+        ? "/resources/images/field_of_operation_vn.svg"
+        : "/resources/images/field_of_operation.svg";
+
+    localStorage.setItem("operationImage", operationImage.src);
+  }
+
   i18next.changeLanguage(lang, () => {
     updateContent();
     if (typeof updateHeaderContent === "function") {
