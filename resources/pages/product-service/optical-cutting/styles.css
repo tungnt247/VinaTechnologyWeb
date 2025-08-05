@@ -112,6 +112,29 @@ html {
   padding: 7.5rem 15.75rem;
 }
 
+.container-product-photos img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-gallery p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.product-gallery img {
+  margin-top: 1.5rem;
+}
+
 /* ====================== WRAPPER ====================== */
 .wrapper {
   display: flex;
@@ -155,7 +178,7 @@ main {
   .container-product-photos {
     flex: 1;
     text-align: center;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem;
   }
 }
 

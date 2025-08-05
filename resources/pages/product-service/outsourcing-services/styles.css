@@ -71,6 +71,17 @@ html {
   margin-bottom: 1rem;
 }
 
+.container-img-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-img-machine {
+  margin-top: 3rem;
+}
+
 .container-img-outsourcing-services {
   display: flex;
   justify-content: center;
@@ -211,12 +222,27 @@ main {
     padding: 3.5rem 2rem;
   }
 
-  .title-outsourcing-services {
-    margin-bottom: 1rem;
+  .container-img-machine {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .style-img-machine {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
   }
 
   .container-img-outsourcing-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     margin-top: 2rem;
+  }
+
+  .title-outsourcing-services {
+    margin-bottom: 1rem;
   }
 
   .section-process-flow {
@@ -249,5 +275,19 @@ main {
 @media (max-width: 480px) {
   .title-outsourcing-services {
     font-size: 1.5rem;
+  }
+
+  .container-img-machine {
+    gap: 1.5rem;
+  }
+
+  .style-img-machine {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-img-outsourcing-services {
+    gap: 1rem;
   }
 }
